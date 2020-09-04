@@ -123,7 +123,7 @@ for period in pd.date_range(start,end,freq='MS'):
     
 fama = pd.DataFrame({'Market Return':Market_Ret, 'SMB':SMB, 'HML':HML, 'Small Growth':small_growth, 'Small Neutral':small_neutral, 'Small Value': small_value, 'Big Growth': big_growth, 'Big Neutral':big_neutral, 'Big Value':big_value}, index = all_data.index.unique())
 print(fama)
-fama.to_excel('fama_french_test.xlsx')
+fama.to_excel('fama_french.xlsx')
     
 
 
